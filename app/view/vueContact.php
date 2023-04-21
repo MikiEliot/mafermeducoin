@@ -6,8 +6,6 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
 
 ?>
 <!-- Vue de la page Contact -->
-<title>Contact Ma Ferme du Coin</title>
-</head>
 
 <section class="pageContact">
 
