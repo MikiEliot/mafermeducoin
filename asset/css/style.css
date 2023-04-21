@@ -227,24 +227,6 @@ button{
   color: rgb(240, 157, 14);
 }
 
-#navBarHeader .boutonsConnection {
-  margin-top: 90%;
-  margin-bottom: 20px;
-}
-
-#navBarHeader .boutonsConnection li {
-  border: 1px solid rgb(15, 185, 200);
-}
-
-#navBarHeader .boutonsConnection li a {
-  color: rgb(98, 95, 82);
-  ;
-}
-
-#navBarHeader .boutonsConnection li a:hover {
-  color: rgb(11, 178, 161);
-}
-
 #burgerMenu {
   display: none;
 }
@@ -892,10 +874,6 @@ footer {
     margin-right: 20px;
   }
 
-  #navBarHeader .boutonsConnection {
-    margin: 0 auto;
-  }
-
   #navBarHeader ul {
     display: none;
   }
@@ -1137,10 +1115,6 @@ footer {
   #navBarHeader {
     width: 90%;
     margin-right: 20px;
-  }
-
-  #navBarHeader .boutonsConnection {
-    margin: 0 auto;
   }
 
   #navBarHeader ul {
