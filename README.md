@@ -20,7 +20,7 @@ Enfin, Ma Ferme du Coin a été développé en utilisant les langages de program
 Pour plus d'informations sur la configuration de ces outils et bibliothèques, veuillez consulter la documentation respective de chaque technologie.
 
  
-# Instalation
+# Installation
 
 Pour l'installation, on va récupérer le repo en faisant dans votre terminal :
 git clone https://github.com/MikiEliot/ProjetFinal
