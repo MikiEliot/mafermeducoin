@@ -448,11 +448,7 @@ button{
 }
 
 .sectionBlog .blogContenu .auteur {
-  text-align: right;
-}
-
-.sectionBlog .blogContenu .date {
-  text-align: right;
+  text-align: left;
 }
 
 .imageBlog {

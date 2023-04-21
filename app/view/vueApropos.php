@@ -6,8 +6,6 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
 
 ?>
 <!-- Vue de la page de l'accueil -->
-<title>Page A Propos</title>
-</head>
 
 		<section class='sectionApropos'>
 			<article class="apropoContenu">

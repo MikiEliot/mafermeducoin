@@ -1,7 +1,6 @@
 <!-- Vue de la profil personnel d'un producteur -->
 
-<title>Profil Producteur</title>
-</head>
+
 
 <body>
     <section id="pageProfile">

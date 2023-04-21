@@ -2,7 +2,7 @@
     <main class="container">
         <header class="header">
             <div class="divLogo">
-                <form class="formDeRecherche" action="" method="GET">
+                <form class="formDeRecherche" action="#" method="GET">
                     <p>Bienvenue dans "Ma Ferme du Coin"!
                         Veuillez trouver la ferme la plus proche en choisissant l'un des deux critères de recherche:</p>
                     <select name="codePostalOuVille" id="codePostalOuVille">
@@ -12,7 +12,8 @@
                     <input type="text" name="rechercher" id="search-bar" required>
                     <input type="submit" value="Rechercher" id="boutonDeRecherche">
                 </form>
-                <div id="logo"><img src=".\asset\images\logoMaFermeSansBg.png">
+                <div id="logo">
+                    <img src="./asset/images/logoMaFermeSansBg.png" alt="logo">
                 </div>
                 <div id="burgerMenu">
                     <img src="./asset/images/menu-carrotes-removebg-preview.png" alt="Menu icon">

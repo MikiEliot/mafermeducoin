@@ -68,8 +68,7 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
             favorisent la biodiversité, créent des emplois locaux, offrent des aliments frais et sains, renforcent les
             liens sociaux et renforcent la confiance dans la qualité des aliments.</p>
         <p class="auteur"><em>Author: </em>Machin Bidule</p>
-        <p class="date">
-            <date>12/02/2023</date>
-        </p>
+            
+        <date class="date">12/02/2023</date>
     </article>
 </section>

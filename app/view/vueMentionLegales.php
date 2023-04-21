@@ -6,8 +6,6 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
 }
 ?>
 <!-- Vue de la page Mention légales -->
-<title>Mention légales</title>
-</head>
 
         <section class="mentionLegales">
 

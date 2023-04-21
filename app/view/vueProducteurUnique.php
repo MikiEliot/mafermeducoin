@@ -1,11 +1,8 @@
 <!-- Vue de la producteur séléctioné -->
 
-<title>Page Producteur</title>
-</head>
-
     <section class="producteurUnique">
       <div class="imgProducteurUnique">
-        <img src=".\asset\images\apples.jpg" alt="apple orchard">
+        <img src="./asset/images/apples.jpg" alt="apple orchard">
       </div>
       <div class="descriptionProducteurUnique">
         <p><?php echo "Férme : " . $producteur->nomProducteur ?></p>

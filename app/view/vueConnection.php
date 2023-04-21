@@ -23,3 +23,6 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
           <p> Vous n'avez toujours pas de compte? <a href="./?action=inscription"> S'inscrire</a></p> 
           <p>Retour à la <a href="./?action=default">Accueil</a></p>
         </div>
+      </main>
+</body>
+</html>

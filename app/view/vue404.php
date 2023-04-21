@@ -6,8 +6,6 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
 
 ?>
 <!-- Vue de la page d'erreur -->
-<title>Page 404</title>
-</head>
 
 <body>
     <main class="container">

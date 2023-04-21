@@ -5,8 +5,6 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
 }
 ?>
 <!-- Vue des resultats de la recherche -->
-<title>Liste des producteurs</title>
-</head>
 <section id="sectionListeProducteurs">
   <h1>On a trouvé <?php echo count($listeProducteurs)?> férme(s) à votre proximité:</h1>
   <div id="mapListe"></div>

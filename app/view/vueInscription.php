@@ -6,8 +6,7 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
 ?>
 
 <!-- Vue de la page Inscription -->
-<title>Inscription</title>
-</head>
+
 
 <body>
   <main id="mainInscription">

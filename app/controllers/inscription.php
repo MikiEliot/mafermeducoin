@@ -8,6 +8,10 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
 
 include RACINE . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'head.php';
 ?>
+<title>Inscription</title>
+</head>
+
+
 
 <?php 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
