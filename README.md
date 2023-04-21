@@ -34,7 +34,7 @@ git clone https://github.com/MikiEliot/ProjetFinal
 4. Créer la base de données : Importez le fichier dump.sql dans votre système de gestion de base de données pour créer la base de données et ses tables correspondantes.
 5. Connexion à la base de données : Assurez-vous que les informations de connexion à la base de données dans le fichier .env sont correctes. 
   Si nécessaire, modifiez ces informations pour qu'elles correspondent à votre configuration de base de données.
-6. Ouvrir l'application : Ouvrez votre navigateur web et accédez à l'URL http://localhost/ProjetFinal/ pour accéder à l'application.
+6. Ouvrir l'application : Ouvrez votre navigateur web et accédez à l'URL http://localhost/mafermeducoin pour accéder à l'application.
 
 # Utilisation 
 "Ma Ferme Du Coin" est destiné aux utilisateurs soucieux de manger mieux et plus responsable en achetant des produits frais et locaux. 
