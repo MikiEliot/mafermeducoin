@@ -1,0 +1,1319 @@
+/* espace reserve pour les fonts et le page reset */
+
+
+:root{
+  --border-bouton: rgb(206, 139, 16);
+  --fond-contenu: rgb(242, 252, 204);
+  --fond-orange: rgb(249, 171, 69);
+  --fond-vert-gris: rgb(185 202 181);
+
+}
+@font-face {
+  font-family: 'Alice-Regular';
+  src: url('../asset/fonts/Alice-Regular.ttf');
+}
+@font-face {
+  font-family: 'Allura-Regular';
+  src: url('../fonts/Allura-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Alata-Regular';
+  src: url('../fonts/alata-regular.ttf');
+}
+
+
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+}
+.container {
+  min-height: 100vh;
+  background-color: var(--fond-contenu);
+  position: relative;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  font-family: "Alata-Regular", "Alice-Regular", sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: "Allura-Regular","Alice-Regular", sans-serif;;
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Alata-Regular", "Alice-Regular", sans-serif;
+  font-size: 1.5rem;
+}
+
+input {
+  height: 2.5rem;
+}
+
+label {
+  font-family: "Alata-Regular", "Alice-Regular", sans-serif;
+  font-size: 1.5rem
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+textarea {
+  font-family: "Alata-Regular", "Alice-Regular", sans-serif;
+  font-size: 1.5rem;
+}
+button{
+  font-family: "Alata-Regular", "Alice-Regular", sans-serif;
+}
+/*----------------------Style de transition de Burger menu liste------------------*/
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* ------------------- Style de header --------------------------- */
+
+
+.header {
+  background-image: url('../images/grass-field-with-cows-distant-sunny-day-with-trees-blue-sky.jpg');
+  background-size: cover;
+
+}
+
+.divLogo {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#logo img {
+  width: 100%;
+}
+
+.formDeRecherche {
+  margin-top: 20px;
+  text-align: center;
+  width: 20%;
+}
+
+.formDeRecherche p {
+  width: 90%;
+  text-align: justify;
+  padding-top: 20px;
+  margin: 0 auto;
+  font-size: calc(0.7em + 1vw);
+  margin-bottom: 100px;
+  color: rgb(64, 33, 27);
+
+}
+
+
+.formDeRecherche #codePostalOuVille {
+  margin-bottom: 50px;
+  width: 95%;
+  text-align: center;
+  height: 4rem;
+  border-radius: 5px;
+  border-color: var(--border-bouton);
+  color: rgb(98, 95, 82);
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: "Alata-Regular", "Alice-Regular", sans-serif;
+}
+
+.formDeRecherche #search-bar {
+  margin-top: 25px;
+  margin-right: 0;
+  width: 95%;
+  height: 4rem;
+  border-radius: 5px;
+  border-color: var(--border-bouton);
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.formDeRecherche #boutonDeRecherche {
+  width: 95%;
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 4rem;
+  background-color: none;
+  border-color: var(--border-bouton);
+  color: rgb(98, 95, 82);
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 2rem;
+  font-family: "Alata-Regular", "Alice-Regular", sans-serif;
+}
+
+.formDeRecherche #boutonDeRecherche:hover {
+  color: rgb(11, 178, 161);
+  background-color: beige;
+}
+
+#navBarHeader {
+  width: 20%;
+  margin-right: 20px;
+}
+
+#navBarHeader ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style-type: none;
+  align-items: flex-end;
+  margin-top: 10%;
+}
+
+#navBarHeader ul li {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 2.5rem;
+  border: 1px solid var(--border-bouton);
+  background-color: rgba(245, 245, 222, 0.7);
+  border-radius: 15px;
+  width: 200px;
+}
+
+
+#navBarHeader ul li a {
+  color: rgb(98, 95, 82);
+}
+
+#navBarHeader ul li a:hover {
+  color: rgb(240, 157, 14);
+}
+
+#navBarHeader .boutonsConnection {
+  margin-top: 90%;
+  margin-bottom: 20px;
+}
+
+#navBarHeader .boutonsConnection li {
+  border: 1px solid rgb(15, 185, 200);
+}
+
+#navBarHeader .boutonsConnection li a {
+  color: rgb(98, 95, 82);
+  ;
+}
+
+#navBarHeader .boutonsConnection li a:hover {
+  color: rgb(11, 178, 161);
+}
+
+#burgerMenu {
+  display: none;
+}
+
+/*-------------------------Producteur connecté-----------------------------*/
+#pageProfile{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color:var(--fond-orange);
+}
+#headerProducteurConnecte{
+  text-align: center;
+  padding: 20px;
+}
+#sousHeaderProducteurConnecte{
+  font-family: "Allura-Regular","Alice-Regular", sans-serif;;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.producteurConnecte{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#imageProfileProducteur{
+  width: 35%;
+  margin: 15px;
+
+}
+#imageProfileProducteur img{
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.descriptionProducterConnecte{
+  margin: 10px;
+}
+.descriptionProducterConnecte p{
+  margin: 15px;
+}
+.descriptionProducterConnecte textarea{
+  resize: none;
+  width: 100%;
+}
+.descriptionProducterConnecte input{
+  width: 100%;
+}
+
+#contenuModifiable{
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  justify-content: space-around
+}
+
+#contenuModifiable textarea{
+  resize: none;
+  width: 100%;
+}
+#contenuModifiable input{
+  width: 100%;
+}
+.boutonEnregistrer{
+  margin-top: 30px;
+  border-radius: 5px;
+  height: 2rem;
+  border-color: var(--border-bouton);
+  color: rgb(74, 66, 30);
+  background-color: rgb(53 143 30 / 40%);
+  font-size: 1.3rem;
+  width: 200px;
+  text-align: center;
+}
+.boutonEnregistrer:hover{
+  color: blue;
+}
+.boutonDeconnecte{
+  margin: 0 auto;;
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 2rem;
+  border-color: var(--border-bouton);
+  color: rgb(74, 66, 30);
+  background-color: rgb(53 143 30 / 40%);
+  font-size: 1.3rem;
+  width: 200px;
+  text-align: center;
+}
+.boutonDeconnecte:hover{
+  color: blue;
+}
+
+
+
+/* ---------------------- Style de la page A propos ------------------------ */
+
+.sectionApropos {
+  display: flex;
+}
+
+.sectionApropos .titreApropos {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sectionApropos .apropoContenu {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.apropoContenu p {
+  margin-left: 10%;
+  margin-top: 20px;
+  width: 80%;
+  text-align: justify;
+}
+
+.imageApropos {
+  margin-right: 20px;
+  width: 40%;
+
+}
+
+.imageApropos img {
+  margin-top: 40px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+
+/* ---------------------- Style de la page 404 ------------------------ */
+
+
+.erreur {
+
+  background-color: var(--fond-contenu);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.erreur p {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 60%;
+  text-align: justify;
+}
+
+.boutonRetourAccueil {
+  margin-top: 20px;
+  width: 300px;
+  border-radius: 5px;
+  height: 4rem;
+  background-color: none;
+  border-color: var(--border-bouton);
+  color: rgb(39, 39, 38);
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 1.2rem;
+}
+
+.bouttonRetourAccueil:hover {
+  color: rgb(11, 178, 161);
+  background-color: beige;
+}
+
+.imgLogo {
+  padding: 0 auto;
+  margin: 0 auto;
+
+}
+
+
+
+
+/* ---------------------- Style de la page blog ------------------------ */
+
+
+.sectionBlog {
+  display: flex;
+}
+
+
+.sectionBlog .blogContenu {
+  width: 60%;
+  margin: 10px 20px;
+}
+
+.sectionBlog .blogContenu h1 {
+  margin-bottom: 20px;
+}
+
+.sectionBlog .blogContenu p {
+  text-align: justify;
+}
+
+.sectionBlog .blogContenu .auteur {
+  text-align: right;
+}
+
+.sectionBlog .blogContenu .date {
+  text-align: right;
+}
+
+.imageBlog {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 35%;
+
+}
+
+.imageBlog img {
+  border-radius: 15px;
+  margin-bottom: 40px;
+
+
+}
+
+
+
+
+/* ---------------------- Style de la page connection ------------------------ */
+
+
+#formConnection {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  margin: 0 auto;
+  align-items: center;
+  background-color: var(--fond-orange);
+}
+.inputConnection input{
+  font-size: 1.3rem;
+  margin: 15px 0;
+  width: 400px;
+}
+.boutonConnection{
+  margin-top:20px;
+  border-radius: 5px;
+  height: 2rem;
+  border-color: var(--border-bouton);
+  color: rgb(74, 66, 30);
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 1.3rem;
+  width: 400px;
+}
+
+.descriptionConnection{
+  width: 400px;
+}
+.descriptionConnection p{
+  font-size: 1.3rem;
+  margin: O auto;
+  padding-top: 10px;
+  text-align: center;
+}
+.descriptionConnection a{
+  font-size: 1.3rem;
+  color: rgb(234, 222, 59);
+}
+.descriptionConnection a:hover{
+  color: rgb(81, 151, 255);
+}
+/* ---------------------- Style de la inscription ------------------------ */
+
+#mainInscription{
+  background-color: var(--fond-orange);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+}
+#seInscrire {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+#seInscrire .inputInscription {
+  text-align: left;
+  margin: 10px;
+}
+
+.inputInscription input {
+  font-size: 1rem;
+  width: 400px;
+}
+
+
+#seInscrire .texteCheckboxInscription label {
+  font-size: 1.3rem;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+#seInscrire .boutonSinscrire {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#seInscrire .boutonSinscrire button {
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 2.5rem;
+  border-color: var(--border-bouton);;
+  color: rgb(98, 95, 82);
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 1.5rem;
+  width: 200px;
+}
+#seInscrire .boutonSinscrire button:hover {
+  background-color: rgb(210, 244, 131);
+}
+#texteLienVersSeConnecter p {
+  font-size: 1.3rem;
+  margin: O auto;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#texteLienVersSeConnecter a {
+  color: rgb(234, 222, 59);
+}
+
+#texteLienVersSeConnecter a:hover {
+  color: rgb(81, 151, 255);
+}
+.bgMessage{
+  text-align: center;
+  background-color: var(--fond-orange);
+}
+.bgMessage a{
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: rgb(0, 255, 17);
+}
+.bgMessage a:hover{
+  color: blue;
+}
+
+
+/* ---------------------- Style de la liste des producteurs ------------------------ */
+.imgProducteurListe {
+  opacity: 0.7;
+  width: 40%;
+  margin: 20px;
+}
+
+#sectionListeProducteurs {
+  background-color: rgb(255 3 3 / 8%);
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.articlesListeProducteurs {
+  width: 82%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.articlesListeProducteurs p {
+  text-align: left;
+  padding: 10px;
+  margin: 0 auto;
+  color: rgb(42, 116, 165);
+
+}
+
+#mapListe {
+  border-radius: 15px;
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.zeroResultats {
+  font-size: 1.9rem;
+}
+
+.zeroResultats a {
+  color: rgb(96, 186, 11);
+  border-radius: 10px;
+  margin: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.zeroResultats a:hover {
+  color: #f5ce0dda
+}
+
+
+/* ---------------------- Style de la vue Producteur unique ------------------------ */
+
+
+
+.producteurUnique {
+  border: 1px solid rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: rgb(241, 241, 241);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.imgProducteurUnique {
+  width: 40%;
+  margin: 40px;
+
+}
+
+.imgProducteurUnique img {
+  width: 100%;
+  opacity: 90%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.resultatRechercheUnique {
+
+  display: flex;
+  border: none;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px 0px rgb(235, 137, 137), inset 4px 4px 15px 0px rgb(219, 207, 207), 14px 12px 15px 8px rgba(0, 0, 0, 0.07);
+}
+
+.resultatRechercheUnique:hover {
+  background-color: rgb(255, 196, 75);
+}
+
+.descriptionProducteurUnique {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.descriptionProducteurUnique p {
+  text-align: left;
+  line-height: 3rem;
+}
+
+#mapid {
+  border-radius: 15px;
+  width: 50%;
+  height: 300px;
+  margin: 40px;
+}
+
+
+/* ---------------------- Style de la page Contact ------------------------ */
+.pageContact {
+  display: flex;
+}
+
+.pageContact #formContact {
+  margin: 0 auto;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.pageContact #descriptionContact {
+  width: 90%;
+}
+
+#descriptionContact h1 {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+#descriptionContact p {
+  line-height: 3rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.pageContact #formContact .inputContact {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  border: #7e6824;
+
+}
+
+.pageContact #formContact textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  border: 1px solid black;
+}
+
+.pageContact #envoyerContact {
+  font-family: "Alata-Regular", "Alice-Regular", sans-serif;
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 4rem;
+  background-color: none;
+  border-color: var(--border-bouton);
+  color: rgb(98, 95, 82);
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.pageContact #envoyerContact:hover {
+  color: rgb(11, 178, 161);
+  background-color: beige;
+}
+
+/* ---------------------- Style de la Mention légales ------------------------ */
+
+.mentionLegales {
+  padding-top: 15px;
+}
+
+.mentionLegales h1 {
+  text-align: center;
+}
+
+.mentionLegales p {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 80%;
+  text-align: justify;
+}
+
+
+/* ---------------------- Style de Footer------------------------ */
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--fond-vert-gris);
+  margin: 0 auto;
+  align-items: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+
+}
+
+.footer-link a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: rgb(75 113 4);
+}
+
+.footer-link a:hover {
+  text-decoration: none;
+  color: rgb(37, 101, 250);
+}
+
+
+
+
+
+/*------------------------------------- MEDIA QUERIES---------------------------------  */
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+  /*-------------------Header-----------------------------*/
+
+  .divLogo {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #logo img {
+    display: none;
+  }
+
+  .formDeRecherche {
+    background-image: url(../images/logoMaFermeSansBg.png);
+    width: 90%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .formDeRecherche p {
+    font-size: 2rem;
+    margin-bottom: 200px;
+  }
+
+  .formDeRecherche #codePostalOuVille {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .formDeRecherche #search-bar {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .formDeRecherche #boutonDeRecherche {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+
+  /*-------------------------------Burger menu--------------------------*/
+  #navBarHeader {
+    width: 90%;
+    margin-right: 20px;
+  }
+
+  #navBarHeader .boutonsConnection {
+    margin: 0 auto;
+  }
+
+  #navBarHeader ul {
+    display: none;
+  }
+
+  #burgerMenu {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #burgerMenu img {
+    width: 300px;
+    height: 300px;
+  }
+
+  #navBarHeader ul.show {
+    animation: slideIn .5s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    height: 100%;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(98, 96, 96, 0.97);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    -webkit-animation: slideIn .5s ease-in-out forwards;
+    flex-wrap: nowrap;
+  }
+
+  #navBarHeader ul.show li {
+    background-color: rgba(244, 239, 224, 0.7);
+    margin-top: 20px;
+    font-size: 1.8rem;
+    width: 300px;
+    text-align: center;
+  }
+
+  #navBarHeader ul.show li a {
+    color: rgb(98, 95, 82);
+    font-size: 1.8rem;
+  }
+
+
+  #navBarHeader ul.show li:hover {
+    background-color: rgb(216, 141, 12);
+  }
+  /*-------------------------Page Profile--------------------------------*/
+  #contenuModifiable{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  #contenuModifiable textarea{
+    width: 80%;
+  }
+  #contenuModifiable input{
+    width: 80%;
+  }
+  /*-------------------------Resultats recherche----------------------- */
+
+
+  .articlesListeProducteurs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .producteurUnique {
+    flex-wrap: wrap;
+  }
+
+  .imgProducteurUnique {
+    width: 90%;
+    margin: 20px
+  }
+
+  .descriptionProducteurUnique {
+    margin: 0;
+    width: 90%;
+  }
+
+  #mapid {
+    width: 90%;
+  }
+
+  /*-------------------------A propos---------------------- */
+  .sectionApropos {
+    flex-wrap: wrap;
+  }
+
+  .sectionApropos .apropoContenu {
+    width: 90%;
+  }
+
+  .imageApropos {
+    display: none;
+  }
+
+  /*-------------------------Page Contact----------------------- */
+  #descriptionContact h1 {
+    width: 90%;
+  }
+
+  #descriptionContact p {
+    width: 90%;
+  }
+
+  .pageContact {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .pageContact #formContact {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: normal;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pageContact #formContact textarea {
+    width: auto;
+  }
+
+  /*-------------------------Blog----------------------- */
+  .imageBlog {
+    display: none;
+  }
+
+  .sectionBlog .blogContenu {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .sectionBlog .blogContenu .auteur {
+    text-align: left;
+  }
+
+  .sectionBlog .blogContenu .date {
+    text-align: left;
+  }
+
+  /*-----------------------------Inscription----------------------------------*/
+  .inputInscription input {
+    width: 250px;
+  }
+  
+  #seInscrire .texteCheckboxInscription label {
+    width: 250px;
+  }
+
+  /*--------------------------------Connection---------------------------------*/
+  .inputConnection input{
+    width: 200px;
+  }
+  .boutonConnection{
+    width: 200px;
+  }
+  .descriptionConnection{
+    width: 200px;
+  }
+  /*--------------------------------Page 404---------------------------------*/
+  .boutonRetourAccueil {
+    width: 200px;
+  }
+
+  /*-------------------------Footer----------------------- */
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-link a {
+    font-size: 1.4rem;
+  }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  /*-------------------Header-----------------------------*/
+  .divLogo {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #logo img {
+    display: none;
+  }
+
+  .formDeRecherche {
+    background-image: url(../images/logoMaFermeSansBg.png);
+    width: 90%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .formDeRecherche p {
+    font-size: 2rem;
+    margin-bottom: 200px;
+  }
+
+  .formDeRecherche #codePostalOuVille {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .formDeRecherche #search-bar {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .formDeRecherche #boutonDeRecherche {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+
+  /*-------------------------------Burger menu--------------------------*/
+  #navBarHeader {
+    width: 90%;
+    margin-right: 20px;
+  }
+
+  #navBarHeader .boutonsConnection {
+    margin: 0 auto;
+  }
+
+  #navBarHeader ul {
+    display: none;
+  }
+
+  #burgerMenu {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #burgerMenu img {
+    width: 300px;
+    height: 300px;
+  }
+
+  #navBarHeader ul.show {
+    animation: slideIn .5s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    height: 100%;
+    align-items: center;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+    
+    background-color: rgba(98, 96, 96, 0.97);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    -webkit-animation: slideIn .5s ease-in-out forwards;
+    flex-wrap: nowrap;
+  }
+
+  #navBarHeader ul.show li {
+    background-color: rgba(244, 239, 224, 0.7);
+    margin-top: 20px;
+    font-size: 1.8rem;
+    width: 300px;
+    text-align: center;
+  }
+
+  #navBarHeader ul.show li a {
+    color: rgb(98, 95, 82);
+    font-size: 1.8rem;
+  }
+
+  #navBarHeader ul.show li:hover {
+    background-color: rgb(216, 141, 12);
+  }
+ /*-------------------------Page Profile--------------------------------*/
+ #contenuModifiable{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+#contenuModifiable textarea{
+  width: 80%;
+}
+#contenuModifiable input{
+  width: 80%;
+}
+  /*-------------------------Resultats recherche----------------------- */
+  .articlesListeProducteurs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .producteurUnique {
+    flex-wrap: wrap;
+  }
+
+  .descriptionProducteurUnique {
+    margin: 0;
+    width: 90%;
+  }
+
+  .imgProducteurUnique {
+    width: 90%;
+    margin: 20px
+  }
+
+  #mapid {
+    width: 90%;
+  }
+
+  /*-------------------------Page A Propos----------------------- */
+  .imageApropos {
+    display: none;
+  }
+
+  .sectionApropos .apropoContenu {
+    width: 90%;
+  }
+
+  /*-------------------------Page Contact----------------------- */
+  .pageContact {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .pageContact #formContact {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-content: normal;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pageContact #formContact textarea {
+    width: auto;
+  }
+
+  #descriptionContact h1 {
+    width: 90%;
+  }
+
+  #descriptionContact p {
+    width: 90%;
+  }
+
+  /*----------------------Blog-----------------------*/
+  .imageBlog {
+    display: none;
+  }
+
+  .sectionBlog .blogContenu {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /*-----------------------------Inscription----------------------------------*/
+  .inputInscription input {
+    width: 300px;
+  }
+  
+  #seInscrire .texteCheckboxInscription label {
+    width: 300px;
+  }
+
+  /*--------------------------------Connection---------------------------------*/
+  .inputConnection input{
+    width: 300px;
+  }
+  .boutonConnection{
+    width: 300px;
+  }
+  .descriptionConnection{
+    width: 300px;
+  }
+  /*--------------------------------Page 404---------------------------------*/
+  .boutonRetourAccueil {
+    width: 250px;
+  }
+
+  /*--------------------------------Footer---------------------------------*/
+  .footer-link a {
+    font-size: 1.6rem;
+  }
+
+}
