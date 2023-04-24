@@ -433,6 +433,7 @@ button{
   text-align: left;
 }
 
+
 .imageBlog {
   margin-top: 20px;
   margin-left: 20px;
@@ -576,6 +577,48 @@ button{
   color: blue;
 }
 
+/* ---------------------- Back office ------------------------ */
+
+#backoffice{
+  background-color: var(--fond-orange);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#backoffice h1{
+  font-family: 'Alata-Regular';
+  text-align: center;
+}
+.rechercheProfilBack{
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+.rechercheProfilBack input{
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 2.5rem;
+  border-color: var(--border-bouton);;
+  color: rgb(98, 95, 82);
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 1.5rem;
+  width: 100%;
+}
+.rechercheProfilBack button{
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 2.5rem;
+  border-color: var(--border-bouton);;
+  color: rgb(98, 95, 82);
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 1.5rem;
+  width: 100%;
+}
+.rechercheProfilBack button:hover{
+  background-color: red;
+}
 
 /* ---------------------- Style de la liste des producteurs ------------------------ */
 .imgProducteurListe {

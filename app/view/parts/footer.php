@@ -11,6 +11,9 @@
   <div class="footer-link">
    <a href="./?action=blog">Blog</a>
   </div>
+  <div class="footer-link">
+   <a href="./?action=connectionAdmin">Administrateur</a>
+  </div>
 </footer>
 
 

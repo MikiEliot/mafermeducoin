@@ -1,10 +1,3 @@
-<?php
-// Un MVC utilise uniquement ses requêtes depuis le contrôleur principal : index.php
-if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
-    die('Erreur : '.basename(__FILE__));
-}
-
-?>
 <!-- Vue de la page d'erreur -->
 
 <body>

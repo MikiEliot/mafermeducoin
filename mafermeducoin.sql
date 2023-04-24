@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 21 avr. 2023 à 00:01
+-- Généré le : lun. 24 avr. 2023 à 09:24
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.2.0
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `mafermeducoin`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `administrateurs`
+--
+
+CREATE TABLE `administrateurs` (
+  `idAdmin` int(11) NOT NULL,
+  `prenom` varchar(30) DEFAULT NULL,
+  `nom` varchar(30) DEFAULT NULL,
+  `email` varchar(60) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `administrateurs`
+--
+
+INSERT INTO `administrateurs` (`idAdmin`, `prenom`, `nom`, `email`, `password`) VALUES
+(1, 'Miodrag', 'Mihajlovic', 'admin@mafermeducoin.com', '$2y$10$HHWHIJ1iosLg.wOq6YP8AegSgOoRJJpTnnMTjYnDZridCRTvxvRzK');
 
 -- --------------------------------------------------------
 
@@ -160,7 +181,7 @@ CREATE TABLE `profilproducteur` (
 --
 
 INSERT INTO `profilproducteur` (`idUser`, `email`, `prenom`, `nom`, `motDePass`, `telephone`, `siret`) VALUES
-(44, 'miki10@test.com', 'miki10', 'miki10', '$2y$10$Texcy1Hup7FhOU2UZHMDo.eqWDDQYNr9pxRJS3WIOn7PIW6jOchXy', '89 91 01 81 12', '791 775 117 00017');
+(44, 'miki10@test.com', 'NouveauPrenom', 'NouveauNom', '$2y$10$vhi76EBSgwCTiSBFtxBvpOo7YrXQL5ZXbXELYre2T44NQ1l/kZaA.', '89 91 01 81 12', '791 775 117 00017');
 
 -- --------------------------------------------------------
 
@@ -176,6 +197,12 @@ CREATE TABLE `proposer` (
 --
 -- Index pour les tables déchargées
 --
+
+--
+-- Index pour la table `administrateurs`
+--
+ALTER TABLE `administrateurs`
+  ADD PRIMARY KEY (`idAdmin`);
 
 --
 -- Index pour la table `contact_messages`
@@ -215,6 +242,12 @@ ALTER TABLE `proposer`
 --
 
 --
+-- AUTO_INCREMENT pour la table `administrateurs`
+--
+ALTER TABLE `administrateurs`
+  MODIFY `idAdmin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT pour la table `contact_messages`
 --
 ALTER TABLE `contact_messages`
@@ -224,7 +257,7 @@ ALTER TABLE `contact_messages`
 -- AUTO_INCREMENT pour la table `profilproducteur`
 --
 ALTER TABLE `profilproducteur`
-  MODIFY `idUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `idUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- Contraintes pour les tables déchargées

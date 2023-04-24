@@ -11,7 +11,7 @@
                 <img src=".\asset\images\apples.jpg" alt="apple orchard">
             </div>
             <section class="descriptionProducterConnecte">
-                <p><?php echo "Férme : " . $producteur->nomProducteur ?></p>
+                <p><?php echo "Ferme : " . $producteur->nomProducteur ?></p>
                 <p><?php echo "Ville : " . $producteur->ville ?></p>
                 <p><?php echo "Rue : " . $producteur->rue ?></p>
                 <p><?php echo "Code postal : " . $producteur->codePostal ?></p>
